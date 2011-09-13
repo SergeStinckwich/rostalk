@@ -5,6 +5,16 @@ Rostalk is a <a href="http://www.ros.org/">ROS</a> client implemented in Jtalk t
 
 Jtalk is an implementation of the <a href="http://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a> language that runs on top of the <a href="http://en.wikipedia.org/wiki/Javascript">JavaScript</a> runtime. It is designed to make client-side development faster and easier. Jtalk is written in itself, including the parser and compiler. Jtalk compiles into efficient JavaScript, mapping one-to-one with the equivalent JavaScript. There is no interpretation at runtime.
 
+Install
+=======
+
+Get last version of jtalk
+git clone https://github.com/NicolasPetton/jtalk.git
+
+Get last version of rostalk:
+git clone https://github.com/SergeStinckwich/rostalk.git
+
+
 License
 =======
 
