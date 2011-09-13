@@ -8,11 +8,30 @@ Jtalk is an implementation of the <a href="http://en.wikipedia.org/wiki/Smalltal
 Install
 =======
 
-Get last version of jtalk
+Get last version of jtalk:
+
 git clone https://github.com/NicolasPetton/jtalk.git
 
+
 Get last version of rostalk:
+
 git clone https://github.com/SergeStinckwich/rostalk.git
+
+Move Rostalk files in the jtalk repository:
+
+cd rostalk
+cp rostalk.html ../jtalk/
+cp Rostalk-core.js ../jtalk/js/
+cp Rostalk-core.deploy.js ../jtalk/js/
+cp Rostalk-code.st ../jstalk/st/
+cd ..
+
+Launch webserver provides by jtalk (you need Node.js):
+
+cd jtalk
+./bin/server
+
+View http://localhost:4000/rostalk.html in your favorite webserver supporting Websocket.
 
 
 License
