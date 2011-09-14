@@ -5,8 +5,8 @@ Rostalk is a <a href="http://www.ros.org/">ROS</a> client implemented in <a href
 
 Amber Smalltalk (previously known as jtalk) is an implementation of the <a href="http://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a> language that runs on top of the <a href="http://en.wikipedia.org/wiki/Javascript">JavaScript</a> runtime. It is designed to make client-side development faster and easier. Amber is written in itself, including the parser and compiler. Amber compiles into efficient JavaScript, mapping one-to-one with the equivalent JavaScript. There is no interpretation at runtime.
 
-Install
-=======
+Install rostalk
+===============
 
 ### Get last version of amber:
 
@@ -31,6 +31,19 @@ Install
     ./bin/server
 
 ### View http://localhost:4000/rostalk.html in your favorite webserver supporting Websocket.
+
+Setup your ROS environment
+==========================
+
+### Install ROS diamonback
+
+### Start up a roscore, if you haven't already.
+
+    roscore&
+
+### Launch rosbridge to connect ROS to rosjs
+
+    rosrun rosbridge rosbridge.py
 
 License
 =======
