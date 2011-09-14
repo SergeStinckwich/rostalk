@@ -25,25 +25,34 @@ Install rostalk
     cp Rostalk-code.st ../amber/st/
     cd ..
 
-### Launch webserver provides by jtalk (you need Node.js):
+### Launch webserver provides by jtalk (you will need Node.js):
 
     cd amber
     ./bin/server
 
-### View http://localhost:4000/rostalk.html in your favorite webserver supporting Websocket.
-
 Setup your ROS environment
 ==========================
 
-### Install ROS diamonback
+### Install ROS diamonback (Electric not tested at the moment)
 
-### Start up a roscore, if you haven't already.
+### Start up a roscore, if you haven't already:
 
     roscore&
 
-### Launch rosbridge to connect ROS to rosjs
+### Launch rosbridge to connect ROS to rosjs:
 
     rosrun rosbridge rosbridge.py
+
+### Launch your favorite web browser (supporting Websocket) on http://localhost:4000/rostalk.html in your favorite webserver.
+
+Try a first example
+===================
+
+### Enter and evaluate (do it) in the workspace the following Smalltalk expression:
+
+    RosConnection example.
+
+### In the Transcript, you should see that rostalk connected to ROS, publish a topic and print a list of current topics.
 
 License
 =======
