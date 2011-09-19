@@ -77,6 +77,20 @@ return self;}
 }),
 smalltalk.RosConnection);
 
+smalltalk.addMethod(
+'_whenReceive_do_',
+smalltalk.method({
+selector: 'whenReceive:do:',
+fn: function (aTopicName, aFunctionBlock){
+var self=this;
+var actionBlock=nil;
+actionBlock=(function(){return (function($rec){smalltalk.send($rec, "_show_", ["Subscribed to a ROS topic"]);return smalltalk.send($rec, "_cr", []);})((smalltalk.Transcript || Transcript));});
+self['@connection'].addHandler(aTopicName, aFunctionBlock);
+self['@connection'].callService('/rosjs/subscribe', {}, actionBlock);
+return self;}
+}),
+smalltalk.RosConnection);
+
 
 smalltalk.addMethod(
 '_example',
