@@ -33,7 +33,7 @@ Install rostalk
 Setup your ROS environment
 ==========================
 
-### Install ROS diamonback (Electric not tested at the moment)
+### Install ROS Electric
 
 ### Start up a roscore, if you haven't already:
 
