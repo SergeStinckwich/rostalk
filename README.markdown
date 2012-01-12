@@ -35,6 +35,10 @@ Setup your ROS environment
 
 ### Install ROS Electric
 
+### Install ROSBridge
+    
+    apt-get install ros-electric-brown-remotelab
+
 ### Start up a roscore, if you haven't already:
 
     roscore&
